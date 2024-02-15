@@ -1,0 +1,92 @@
+int a=1;
+		while (a<=5)
+		{
+		System.out.println("*");
+		
+		for(int i=0;i<a;i++)
+		{
+			System.out.print("*");
+		}
+		a=a+1;
+	}
+
+
+*****************************************************
+
+ARRAY
+
+package demo;
+import java.util.*;
+import java.math.*;
+public class basic {
+
+	public static void main(String args[]) {
+		// TODO Auto-generated method stub
+		int sum=0;
+		 
+		int mar[] = {1,2,4,5};
+		for(int i=0;i<mar.length;i++)
+		{
+			
+			sum=sum+mar[i];
+		}
+		
+		System.out.println(sum);
+		
+		//int n = 0;
+		int n = mar.length;
+		n = n-1;
+		int a=0;
+		a=mar[n];
+		int b=1;
+		b=b+a;
+		int c=a*b/2;
+		System.out.println(c);
+		System.out.println(c-sum);
+		
+		//System.out.println(i);
+		
+		//Scanner myobj = new Scanner(System.in);
+		//int age = myobj.nextInt();
+	}
+}
+***************************************************
+
+input array
+
+package demo1;
+import java.util.*;
+import java.math.*;
+public class array {
+
+	public static void main(String[] args) {
+		System.out.println("enter your number for finding missing number 1 to 5 or 1 to 10");
+		System.out.println("how many numbers you want to enter");
+		Scanner myn = new Scanner(System.in);
+		int z = myn.nextInt();
+		int mar[]=new int[z];
+		for(int i=0;i<z;i++)
+		{
+			System.out.println("enter num : ");
+			 mar[i]=myn.nextInt();
+		}
+		int sum=0;
+		//int y =0;
+		for(int j=0;j<mar.length;j++)
+		{
+			 sum=sum+mar[j];
+			 //y=j;
+		}
+		//System.out.println(sum);
+		int n = mar.length;
+		n = n-1;
+		int a=0;
+		a=mar[n];
+		int b=1;
+		b=b+a;
+		int c=a*b/2;
+		System.out.println("your missing number is :");
+		System.out.println(c-sum);
+	}
+
+}
